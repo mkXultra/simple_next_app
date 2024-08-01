@@ -5,7 +5,7 @@ export default function Home() {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
-    fetch('/api/hello')
+    fetch('/api/hello', { cache: 'no-store' })
       .then(response => response.json())
       .then(data => setMessage(data.message))
   }, [])
