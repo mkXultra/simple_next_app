@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 export const fetchCache = 'force-no-store'
+export const dynamic = "force-dynamic"
 export default function Home() {
   const [message, setMessage] = useState('')
 
