@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-
+export const fetchCache = 'force-no-store'
 export default function Home() {
   const [message, setMessage] = useState('')
 
